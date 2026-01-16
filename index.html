@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Aru 💖</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Comic Sans MS', cursive;
+        background: linear-gradient(to top right, #ffdde1, #ee9ca7);
+        text-align: center;
+        overflow-x: hidden;
+    }
+    h1 {
+        color: #ff2e63;
+        margin-top: 20px;
+        font-size: 2.5em;
+    }
+    p {
+        color: #333;
+        font-size: 1.1em;
+        padding: 0 15px;
+    }
+    .cake {
+        font-size: 80px;
+        margin: 10px;
+        animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+    .balloon {
+        position: fixed;
+        bottom: -100px;
+        font-size: 40px;
+        animation: float 8s linear infinite;
+    }
+    @keyframes float {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-120vh); }
+    }
+    .anime {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .anime img {
+        width: 140px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    button {
+        background: #ff2e63;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    button:hover {
+        background: #ff4f81;
+    }
+    #secret {
+        display: none;
+        margin-top: 25px;
+        font-size: 1.3em;
+        color: #6a0572;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h1>🎉 Happy Birthday ArunaSri 🎉</h1>
+<p>To my cute Oru (A-R-U),<br>
+Today is special because <b>YOU</b> were born 💕</p>
+
+<div class="cake">🎂</div>
+
+<div class="anime">
+    <img src="https://i.imgur.com/3ZQ3ZxF.png">
+    <img src="https://i.imgur.com/2XKZp9S.png">
+</div>
+
+<button onclick="showLove()">Hello Oru 👋</button>
+
+<div id="secret">
+    I love you ❤️<br>
+    Happy Birthday, my Oru 🎂🎉
+</div>
+
+<div class="balloon" style="left:10%;">🎈</div>
+<div class="balloon" style="left:30%; animation-delay:2s;">🎈</div>
+<div class="balloon" style="left:50%; animation-delay:4s;">🎈</div>
+<div class="balloon" style="left:70%; animation-delay:1s;">🎈</div>
+<div class="balloon" style="left:90%; animation-delay:3s;">🎈</div>
+
+<script>
+function showLove() {
+    document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+  </html>
